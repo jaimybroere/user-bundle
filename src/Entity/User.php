@@ -12,6 +12,7 @@ namespace ConnectHolland\UserBundle\Entity;
 use Doctrine\Common\Collections\ArrayCollection;
 use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
+use Rollerworks\Component\PasswordStrength\Validator\Constraints as RollerworksPassword;
 use Symfony\Bridge\Doctrine\Validator\Constraints\UniqueEntity;
 
 /**
@@ -54,6 +55,16 @@ class User implements UserInterface
 
     /**
      * @var string The hashed password
+     * @RollerworksPassword\PasswordRequirements(
+     *     minLength="8",
+     *     requireLetters=true,
+     *     requireNumbers=true,
+     *     requireCaseDiff=true,
+     *     tooShortMessage="connectholland_user.registration.password.too_short",
+     *     missingNumbersMessage="connectholland_user.registration.password.numbers",
+     *     missingLettersMessage="connectholland_user.registration.password.letters",
+     *     requireCaseDiffMessage="connectholland_user.registration.password.uppercase"
+     * )
      * @ORM\Column(type="string", nullable=true)
      */
     private $password;

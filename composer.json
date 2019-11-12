@@ -21,6 +21,7 @@
         "league/html-to-markdown": "^4.8",
         "php-http/guzzle6-adapter": "^1.0",
         "php-http/httplug-bundle": "^1.16",
+        "rollerworks/password-strength-bundle": "^2.1",
         "swiftmailer/swiftmailer": "^6.2",
         "symfony/config": "^3.4 || ^4.3",
         "symfony/console": "^3.4 || ^4.3",

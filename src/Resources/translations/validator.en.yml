@@ -1,0 +1,7 @@
+connectholland_user:
+    registration:
+        password:
+            too_short:  'Password must be at least {{length}} characters long.'
+            numbers:    'Password must include at least one number.'
+            letters:    'Password must include at least one letter.'
+            uppercase:  'Password must include both upper and lower case letters.'

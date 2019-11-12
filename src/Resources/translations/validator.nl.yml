@@ -1,0 +1,7 @@
+connectholland_user:
+    registration:
+        password:
+            too_short:  'Het wachtwoord moet minimaal {{length}} karakters lang zijn.'
+            numbers:    'Het wachtwoord moet minimaal één nummer bevatten.'
+            letters:    'Het wachtwoord moet minimaal één letter bevatten.'
+            uppercase:  'Het wachtwoord moet minimaal één hoofdletter en kleine letter bevatten.'
